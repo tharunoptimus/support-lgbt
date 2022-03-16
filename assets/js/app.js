@@ -1,3 +1,10 @@
+let username = document.querySelector(".username")
+let wrapper = document.querySelector(".wrapper")
+let formContainer = document.querySelector(".formContainer")
+
+document.querySelector(".cancel").addEventListener("click", closeApp)
+document.querySelector(".calculate").addEventListener("click", renderContent)
+
 function generateNumber(string) {
     let number = 0;
     for (let i = 0; i < string.length; i++) {
