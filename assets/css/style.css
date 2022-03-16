@@ -141,7 +141,7 @@ a {
 }
 
 .promotion img {
-	margin: 0 1rem;
+	margin: 0 0.8rem 0 0;
 	height: 2rem;
 	max-width: 3.5rem;
 	aspect-ratio: 64/32;
@@ -150,4 +150,21 @@ a {
 .support {
 	position: absolute;
 	bottom: 5px;
+}
+
+@media (prefers-color-scheme: dark) {
+	body {
+		background: black;
+		color: white;
+	}
+
+	.formContainer {
+		background-color: #090909;
+	}
+
+	.username {
+		color: white;
+		background-color: black;
+		border: 1px solid #515151;
+	}
 }
