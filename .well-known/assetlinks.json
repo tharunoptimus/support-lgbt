@@ -1,0 +1,12 @@
+[
+	{
+		"relation": ["delegate_permission/common.handle_all_urls"],
+		"target": {
+			"namespace": "android_app",
+			"package_name": "dev.pages.gaymeter.twa",
+			"sha256_cert_fingerprints": [
+				"29:CC:7A:A6:52:41:B0:2C:35:BD:58:93:AA:7A:AD:3A:04:74:57:0F:55:61:2B:A4:C0:56:41:3D:A1:91:DD:F4"
+			]
+		}
+	}
+]
