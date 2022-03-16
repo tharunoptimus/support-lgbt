@@ -27,6 +27,19 @@ function renderHtmlForName(data) {
     return html
 }
 
+function renderContent() {
+    let text = username.value.trim()
+    if(text == "" || text == null ) return
+
+    let value = generateNumber(text)
+    value = getPercent(value)
+
+    let html = renderHtmlForName({text, value})
+    requestAnimationFrame(() => {
+        wrapper.innerHTML = html + wrapper.innerHTML
+    })
+    formContainer.remove()
+}
 
 function closeApp() {
     window.open('','_self').close()
