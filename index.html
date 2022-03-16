@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="description" content="Support LGBT">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="theme-color" content="#FFFFFF"/>
+
+    <link rel="stylesheet" href="./assets/css/style.css">
+    <link rel="shortcut icon" href="./favicon.ico">
+    <link rel="manifest" href="./site.webmanifest">
+    <link rel="apple-touch-icon" href="./assets/images/touch.png">
+    
+    <title>Gay Meter</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="formContainer">
+
+            <input type="text" spellcheck="false" autocomplete="off" class="username" placeholder="Enter a name...">
+
+            <div class="buttonContainers">
+                <button class="buttons cancel">Cancel</button>
+                <button class="buttons calculate">Calculate</button>
+            </div>
+        </div>
+        
+        <a class="support" href="https://gaycenter.org" aria-label="LGBT Website">
+            <div class="promotion">
+                <img src="./assets/images/pride.png" width="196" height="121" alt="LGBT Pride Flag">
+                <span>Support LGBT</span>
+            </div>
+        </a>
+    </div>
+    <script src="./assets/js/app.js"></script>
+    <script>
+        // if('serviceWorker' in navigator) {
+        //     window.addEventListener('load', () => {
+        //         navigator.serviceWorker.register('sw.js')
+        //             .then((reg) => console.log('SW Install Successful 🙌: ', reg.scope))
+        //             .catch((err) => console.log('SW Install Failed 😡: ', err));
+        //     })
+        // }
+    </script>
+    <div id="root"></div>
+</body>
+</html>
