@@ -1,12 +1,11 @@
 [
 	{
-		"relation": ["delegate_permission/common.handle_all_urls"],
-		"target": {
-			"namespace": "android_app",
-			"package_name": "dev.pages.gaymeter.twa",
-			"sha256_cert_fingerprints": [
-				"29:CC:7A:A6:52:41:B0:2C:35:BD:58:93:AA:7A:AD:3A:04:74:57:0F:55:61:2B:A4:C0:56:41:3D:A1:91:DD:F4"
-			]
-		}
+	  "relation": ["delegate_permission/common.handle_all_urls"],
+	  "target": {
+		"namespace": "android_app",
+		"package_name": "dev.pages.gaymeter.twa",
+		"sha256_cert_fingerprints":
+		  ["A9:F0:98:AA:34:46:18:EE:04:FA:BD:E6:45:33:11:5F:E5:1D:A0:3C:5F:60:14:3D:1B:B1:AC:CC:37:C5:56:D9"]
+	  }
 	}
-]
+  ]
