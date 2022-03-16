@@ -26,3 +26,8 @@ function renderHtmlForName(data) {
 
     return html
 }
+
+
+function closeApp() {
+    window.open('','_self').close()
+}
