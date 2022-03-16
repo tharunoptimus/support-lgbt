@@ -35,13 +35,13 @@
     </div>
     <script src="./assets/js/app.js"></script>
     <script>
-        // if('serviceWorker' in navigator) {
-        //     window.addEventListener('load', () => {
-        //         navigator.serviceWorker.register('sw.js')
-        //             .then((reg) => console.log('SW Install Successful 🙌: ', reg.scope))
-        //             .catch((err) => console.log('SW Install Failed 😡: ', err));
-        //     })
-        // }
+        if('serviceWorker' in navigator) {
+            window.addEventListener('load', () => {
+                navigator.serviceWorker.register('sw.js')
+                    .then((reg) => console.log('SW Install Successful 🙌: ', reg.scope))
+                    .catch((err) => console.log('SW Install Failed 😡: ', err));
+            })
+        }
     </script>
     <div id="root"></div>
 </body>
