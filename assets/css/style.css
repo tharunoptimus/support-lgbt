@@ -1,114 +1,153 @@
-html, body {
-    font-weight: 400;
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, 'Open Sans', 'Helvetica Neue', sans-serif;
-    min-height: 100%;
-    height: 100%;
-    margin: 0;
+html,
+body {
+	font-weight: 400;
+	font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen,
+		Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+	min-height: 100%;
+	height: 100%;
+	margin: 0;
 }
 
 a {
-    text-decoration: none;
-    color: #0070f3;
+	text-decoration: none;
+	color: #0070f3;
 }
 
 .wrapper {
-    min-height: 100vh;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    position: relative;
-    justify-content: center;
+	min-height: 100vh;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	position: relative;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .formContainer {
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    margin: 2rem 0.5rem;
-    border: 1px solid #44444444;
-    border-radius: 6px;
-    background-color: #fafafa;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	padding: 1rem;
+	margin: 2rem 0.5rem;
+	border: 1px solid #44444444;
+	border-radius: 6px;
+	background-color: #fafafa;
 }
 
 .username {
-    padding: 0.4rem 0.8rem;
-    border: 1px solid #C4C4C4;
-    margin: 1rem auto 0.4rem;
-    border-radius: 3.5px;
-    font-size: 1.3rem;
-    outline: none;
+	padding: 0.4rem 0.8rem;
+	border: 1px solid #c4c4c4;
+	margin: 1rem auto 0.4rem;
+	border-radius: 3.5px;
+	font-size: 1.3rem;
+	outline: none;
 }
 
 .buttonContainers {
-    display: flex;
-    align-items: center;
-    justify-content: space-evenly;
-    width: 100%;
-    padding: 1rem 0.1rem 0.5rem;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: space-evenly;
+	-ms-flex-pack: space-evenly;
+	justify-content: space-evenly;
+	width: 100%;
+	padding: 1rem 0.1rem 0.5rem;
 }
 
 .buttons {
-    color: #ffffff;
-    font-size: 1.3rem;
-    border: 0;
-    padding: 0.3rem 0.5rem;
-    border-radius: 5px;
-    cursor: pointer;
+	color: #ffffff;
+	font-size: 1.3rem;
+	border: 0;
+	padding: 0.3rem 0.5rem;
+	border-radius: 5px;
+	cursor: pointer;
 }
 
 .cancel {
-    background-color: #e74c3c;
+	background-color: #e74c3c;
 }
 
 .cancel:focus {
-    background-color: #e74c3ca6;
+	background-color: #e74c3ca6;
 }
 
 .calculate {
-    background-color: #0070f3;
+	background-color: #0070f3;
 }
 
 .calculate:focus {
-    background-color: #0070f3ab;
+	background-color: #0070f3ab;
 }
 
 .username:focus {
-    outline: #0070f3 solid 2px;
+	outline: #0070f3 solid 2px;
 }
 
 .contentContainer {
-    flex: 1;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    justify-content: center;
+	-webkit-box-flex: 1;
+	-ms-flex: 1;
+	flex: 1;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-orient: vertical;
+	-webkit-box-direction: normal;
+	-ms-flex-direction: column;
+	flex-direction: column;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	-webkit-box-pack: center;
+	-ms-flex-pack: center;
+	justify-content: center;
 }
 
 .name {
-    text-align: center;
-    font-size: 2rem;
+	text-align: center;
+	font-size: 2rem;
 }
 
 .percentContainer {
-    font-size: 4rem;
-    margin: 1rem 0.2rem;
+	font-size: 4rem;
+	margin: 1rem 0.2rem;
 }
 
 .promotion {
-    display: flex;
-    align-items: center;
-    margin: 0 0 2rem 0;
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	-ms-flex-align: center;
+	align-items: center;
+	margin: 0 0 2rem 0;
 }
 
 .promotion img {
-    margin: 0 1rem;
-    height: 2rem;
-    max-width: 3.5rem;
-    aspect-ratio: 64/32;
+	margin: 0 1rem;
+	height: 2rem;
+	max-width: 3.5rem;
+	aspect-ratio: 64/32;
 }
 
 .support {
-    position: absolute;
-    bottom: 5px;
+	position: absolute;
+	bottom: 5px;
 }
