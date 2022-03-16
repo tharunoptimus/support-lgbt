@@ -4,6 +4,14 @@ let formContainer = document.querySelector(".formContainer")
 
 document.querySelector(".cancel").addEventListener("click", closeApp)
 document.querySelector(".calculate").addEventListener("click", renderContent)
+window.matchMedia("(prefers-color-scheme: dark)").addEventListener("change", e => {
+    if(e.matches) setDisplayMode("dark")
+    else setDisplayMode("white")
+})
+
+function setDisplayMode(mode) {
+    document.querySelector("meta[name=theme-color]").setAttribute("content", mode == "dark" ? "#000000" : "#ffffff")    
+}
 
 function generateNumber(string) {
     let number = 0;
@@ -51,3 +59,5 @@ function renderContent() {
 function closeApp() {
     window.open('','_self').close()
 }
+
+setDisplayMode(window.matchMedia("(prefers-color-scheme: dark)").matches ? "dark" : "white")
